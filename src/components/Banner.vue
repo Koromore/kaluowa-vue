@@ -2,7 +2,7 @@
   <div class="banner">
     <swiper :options="swiperOption" v-if="showSwiper">
       <!-- slides -->
-      <swiper-slide v-for="item of list" :key="item.id">
+      <swiper-slide v-for="item of bannerImg" :key="item.id">
         <img class="banner_img" :src="item.imgUrl" alt="">
       </swiper-slide>
       <!-- Optional controls -->
@@ -24,7 +24,7 @@ export default {
         autoplay: 3000,
         loop: true
       },
-      list: [
+      bannerImg: [
         {
           id: '001',
           imgUrl: require('../assets/images/banner/banner1.jpg')
@@ -54,7 +54,7 @@ export default {
   },
   computed: {
     showSwiper () {
-      return this.list.length
+      return this.bannerImg.length
     }
   }
 }

@@ -4,45 +4,26 @@
       <img src="../assets/images/header/logo.jpg" alt="" srcset="">
       <div class="right">
         <img src="../assets/images/header/biaoyu.jpg" alt="" srcset="">
-        <router-link to='/'>
-          <div class="header-route header-route1">
-            首页
-          </div>
-        </router-link>
-        <router-link to='/'>
-          <div class="header-route header-route2">
-            加盟
-          </div>
-        </router-link>
-        <router-link to='/'>
-          <div class="header-route header-route3">
-            联系
+        <router-link
+          v-for="item of topList"
+          :key="item.id"
+          :to='item.route'
+          >
+          <div :class=item.className>
+            {{item.topName}}
           </div>
         </router-link>
       </div>
     </div>
     <div id="nav">
       <div class="content">
-        <router-link to='/' :class="[activate=='index' ? 'nav_list activ' : 'nav_list']">
-          网站首页
-        </router-link>
-        <router-link to='/brand' :class="[activate=='brand' ? 'nav_list activ' : 'nav_list']">
-          卡诺瓦品牌
-        </router-link>
-        <router-link to='/' :class="[activate=='index3' ? 'nav_list activ' : 'nav_list']">
-          新闻资讯
-        </router-link>
-        <router-link to='/' :class="[activate=='index4' ? 'nav_list activ' : 'nav_list']">
-          产品中心
-        </router-link>
-        <router-link to='/' :class="[activate=='index5' ? 'nav_list activ' : 'nav_list']">
-          客户服务
-        </router-link>
-        <router-link to='/' :class="[activate=='index6' ? 'nav_list activ' : 'nav_list']">
-          在线留言
-        </router-link>
-        <router-link to='/' :class="[activate=='index7' ? 'nav_list activ' : 'nav_list']">
-          联系我们
+        <router-link
+          v-for="item of navList"
+          :key="item.id"
+          :to='item.route'
+          :class="[activate == item.activ ? 'nav_list activ' : 'nav_list']"
+        >
+          {{item.navName}}
         </router-link>
       </div>
     </div>
@@ -56,7 +37,72 @@ export default {
     activate: String
   },
   data () {
-    return {}
+    return {
+      topList: [
+        {
+          id: '001',
+          topName: '首页',
+          className: 'header-route header-route1',
+          route: '/'
+        },
+        {
+          id: '002',
+          topName: '加盟',
+          className: 'header-route header-route2',
+          route: '/'
+        },
+        {
+          id: '003',
+          topName: '联系',
+          className: 'header-route header-route3',
+          route: '/'
+        }
+      ],
+      navList: [
+        {
+          id: '001',
+          navName: '网站首页',
+          route: '/',
+          activ: 'index'
+        },
+        {
+          id: '002',
+          navName: '卡诺瓦品牌',
+          route: '/brand',
+          activ: 'brand'
+        },
+        {
+          id: '003',
+          navName: '新闻资讯',
+          route: '/',
+          activ: 'index3'
+        },
+        {
+          id: '004',
+          navName: '产品中心',
+          route: '/',
+          activ: 'index4'
+        },
+        {
+          id: '005',
+          navName: '客户服务',
+          route: '/',
+          activ: 'index5'
+        },
+        {
+          id: '006',
+          navName: '在线留言',
+          route: '/',
+          activ: 'index6'
+        },
+        {
+          id: '007',
+          navName: '联系我们',
+          route: '/',
+          activ: 'index7'
+        }
+      ]
+    }
   },
   methods: {}
 }
