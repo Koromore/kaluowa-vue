@@ -1,9 +1,9 @@
 <template>
-  <div class="wrapper">
+  <div class="banner">
     <swiper :options="swiperOption" v-if="showSwiper">
       <!-- slides -->
       <swiper-slide v-for="item of list" :key="item.id">
-        <img class="swiper-img" :src="item.imgUrl" alt="">
+        <img class="banner_img" :src="item.imgUrl" alt="">
       </swiper-slide>
       <!-- Optional controls -->
       <div class="swiper-pagination"  slot="pagination"></div>
@@ -26,21 +26,27 @@ export default {
       },
       list: [
         {
+          id: '001',
           imgUrl: require('../assets/images/banner/banner1.jpg')
         },
         {
+          id: '002',
           imgUrl: require('../assets/images/banner/banner2.jpg')
         },
         {
+          id: '003',
           imgUrl: require('../assets/images/banner/banner3.jpg')
         },
         {
+          id: '004',
           imgUrl: require('../assets/images/banner/banner4.jpg')
         },
         {
+          id: '005',
           imgUrl: require('../assets/images/banner/banner5.jpg')
         },
         {
+          id: '006',
           imgUrl: require('../assets/images/banner/banner6.jpg')
         }
       ]
@@ -55,16 +61,14 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-  .wrapper >>> .swiper-pagination-bullet-active
-    background: #fff
-  .wrapper
+  .banner >>> .swiper-pagination-bullet-active
+    background: red
+  .banner
     overflow: hidden
     width: 100%
-    // height: 0
-    // padding-bottom: 31.25%
-    // background: #eee
-    .swiper-wrapper
-      width 100%
-      .swiper-img
-        width: 100%
+    background: #eee
+    .swiper-container
+      max-width 1000px
+      .banner_img
+        width 100%
 </style>

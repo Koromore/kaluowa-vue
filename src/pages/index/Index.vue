@@ -1,6 +1,6 @@
 <template>
   <div id="index">
-    <index-header></index-header>
+    <index-header :activate='activate'></index-header>
     <index-banner></index-banner>
 
     <index-footer></index-footer>
@@ -24,7 +24,8 @@ export default {
     return {
       cities: {},
       hotCities: [],
-      letter: ''
+      letter: '',
+      activate: 'index'
     }
   },
   methods: {
