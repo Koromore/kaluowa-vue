@@ -26,7 +26,7 @@
         <router-link to='/' :class="[activate=='index' ? 'nav_list activ' : 'nav_list']">
           网站首页
         </router-link>
-        <router-link to='/' :class="[activate=='index2' ? 'nav_list activ' : 'nav_list']">
+        <router-link to='/brand' :class="[activate=='brand' ? 'nav_list activ' : 'nav_list']">
           卡诺瓦品牌
         </router-link>
         <router-link to='/' :class="[activate=='index3' ? 'nav_list activ' : 'nav_list']">
@@ -42,7 +42,7 @@
           在线留言
         </router-link>
         <router-link to='/' :class="[activate=='index7' ? 'nav_list activ' : 'nav_list']">
-          在线客服
+          联系我们
         </router-link>
       </div>
     </div>
