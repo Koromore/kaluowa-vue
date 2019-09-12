@@ -27,27 +27,27 @@ export default {
       bannerImg: [
         {
           id: '001',
-          imgUrl: require('../assets/images/banner/banner1.jpg')
+          imgUrl: require('@/assets/images/banner/banner1.jpg')
         },
         {
           id: '002',
-          imgUrl: require('../assets/images/banner/banner2.jpg')
+          imgUrl: require('@/assets/images/banner/banner2.jpg')
         },
         {
           id: '003',
-          imgUrl: require('../assets/images/banner/banner3.jpg')
+          imgUrl: require('@/assets/images/banner/banner3.jpg')
         },
         {
           id: '004',
-          imgUrl: require('../assets/images/banner/banner4.jpg')
+          imgUrl: require('@/assets/images/banner/banner4.jpg')
         },
         {
           id: '005',
-          imgUrl: require('../assets/images/banner/banner5.jpg')
+          imgUrl: require('@/assets/images/banner/banner5.jpg')
         },
         {
           id: '006',
-          imgUrl: require('../assets/images/banner/banner6.jpg')
+          imgUrl: require('@/assets/images/banner/banner6.jpg')
         }
       ]
     }

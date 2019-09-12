@@ -4,6 +4,7 @@
     <index-banner></index-banner>
     <index-product></index-product>
     <index-activity></index-activity>
+    <index-seamlessroll></index-seamlessroll>
     <index-footer></index-footer>
   </div>
 </template>
@@ -14,6 +15,7 @@ import IndexHeader from '@/components/Hander'
 import IndexBanner from '@/components/Banner'
 import IndexProduct from './components/Product'
 import IndexActivity from './components/Activity'
+import IndexSeamlessroll from './components/Seamlessroll'
 import IndexFooter from '@/components/Footer'
 
 export default {
@@ -23,6 +25,7 @@ export default {
     IndexBanner,
     IndexProduct,
     IndexActivity,
+    IndexSeamlessroll,
     IndexFooter
   },
   data () {
