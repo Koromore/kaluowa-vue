@@ -1,5 +1,5 @@
 <template>
-  <div class="banner">
+  <div id="banner">
     <swiper :options="swiperOption" v-if="showSwiper">
       <!-- slides -->
       <swiper-slide v-for="item of bannerImg" :key="item.id">
@@ -61,9 +61,9 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-  .banner >>> .swiper-pagination-bullet-active
+  #banner >>> .swiper-pagination-bullet-active
     background: red
-  .banner
+  #banner
     overflow: hidden
     width: 100%
     background: #eee

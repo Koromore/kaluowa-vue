@@ -2,22 +2,27 @@
   <div id="index">
     <index-header :activate='activate'></index-header>
     <index-banner></index-banner>
-
+    <index-product></index-product>
+    <index-activity></index-activity>
     <index-footer></index-footer>
   </div>
 </template>
 
 <script>
 // import axios from 'axios'
-import IndexHeader from '../../components/Hander'
-import IndexBanner from '../../components/Banner'
-import IndexFooter from '../../components/Footer'
+import IndexHeader from '@/components/Hander'
+import IndexBanner from '@/components/Banner'
+import IndexProduct from './components/Product'
+import IndexActivity from './components/Activity'
+import IndexFooter from '@/components/Footer'
 
 export default {
   name: 'Index',
   components: {
     IndexHeader,
     IndexBanner,
+    IndexProduct,
+    IndexActivity,
     IndexFooter
   },
   data () {

@@ -1,5 +1,5 @@
 <template>
-  <div id="index">
+  <div id="brand">
     <brand-header :activate='activate'></brand-header>
     <brand-banner></brand-banner>
 
@@ -9,9 +9,9 @@
 
 <script>
 // import axios from 'axios'
-import BrandHeader from '../../components/Hander'
-import BrandBanner from '../../components/Banner'
-import BrandFooter from '../../components/Footer'
+import BrandHeader from '@/components/Hander'
+import BrandBanner from '@/components/Banner'
+import BrandFooter from '@/components/Footer'
 
 export default {
   name: 'Brand',
