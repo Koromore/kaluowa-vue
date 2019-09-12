@@ -1,6 +1,6 @@
 <template>
   <div id="activity">
-    <div class="content">
+    <div class="container">
       <div class="list brand">
         <div class="left">
           <p class="title">欧卡罗品牌</p>
@@ -18,6 +18,7 @@
           <img src="@/assets/images/index/fangzi.jpg" alt="" srcset="">
         </div>
       </div>
+      
       <div class="list news">
         <div class="left">
           <p class="title">新闻资讯</p>
@@ -70,7 +71,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-  .content
+  .container
     margin 0 auto
     max-width 1000px
     display flex

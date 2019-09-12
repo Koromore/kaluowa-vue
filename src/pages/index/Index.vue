@@ -60,5 +60,6 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-
+  #index
+    background url(../../assets/images/index/bj_sd.jpg) 0 640px repeat-x
 </style>

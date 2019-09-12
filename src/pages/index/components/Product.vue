@@ -1,6 +1,6 @@
 <template>
   <div id="product">
-    <div class="content">
+    <div class="container">
       <div class="list left">
         <div class="text_box">
           <p class="p1">整体厨柜系列</p>
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-  .content
+  .container
     margin 0 auto
     max-width 1000px
     display flex

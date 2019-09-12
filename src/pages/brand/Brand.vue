@@ -2,7 +2,7 @@
   <div id="brand">
     <brand-header :activate='activate'></brand-header>
     <brand-banner></brand-banner>
-
+    <brand-about></brand-about>
     <brand-footer></brand-footer>
   </div>
 </template>
@@ -11,6 +11,7 @@
 // import axios from 'axios'
 import BrandHeader from '@/components/Hander'
 import BrandBanner from '@/components/Banner'
+import BrandAbout from './components/About'
 import BrandFooter from '@/components/Footer'
 
 export default {
@@ -18,6 +19,7 @@ export default {
   components: {
     BrandHeader,
     BrandBanner,
+    BrandAbout,
     BrandFooter
   },
   data () {

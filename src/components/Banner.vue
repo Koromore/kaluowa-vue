@@ -66,7 +66,6 @@ export default {
   #banner
     overflow: hidden
     width: 100%
-    background: #eee
     .swiper-container
       max-width 1000px
       .banner_img

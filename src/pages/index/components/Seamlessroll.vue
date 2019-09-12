@@ -1,6 +1,6 @@
 <template>
   <div id="seamlessroll">
-    <div class="content">
+    <div class="container">
       <p class="title">最新产品</p>
       <div class="seamless_box">
         <vue-seamless-scroll :data="newsList" :class-option="optionLeft" class="seamless-warp2">
@@ -72,7 +72,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-  .content
+  .container
     width 1000px
     margin 0 auto 13px
     .title
