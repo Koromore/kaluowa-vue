@@ -7,8 +7,12 @@
       </div>
       <div class="content">
         <div class="button">
-          <router-link to="">企业简介</router-link>
-          <router-link to="">企业文化</router-link>
+          <router-link to="" class="but">
+            企业简介
+          </router-link>
+          <router-link to="" class="but">
+            企业文化
+          </router-link>
         </div>
         <div class="content_title">
           <p>公司简介</p>
@@ -56,7 +60,6 @@ export default {
       max-width 1000px
       display flex
       flex-wrap wrap
-      // justify-content space-between
       align-content center
       align-items center
       box-sizing border-box
@@ -76,4 +79,23 @@ export default {
         background #fff url(../../../assets/images/about/cp_bj.jpg) 0 0 repeat-x
         border 1px solid #dbd8da
         padding-bottom 50px
+        .button
+          margin 0 auto
+          max-width 960px
+          height 66px
+          border-bottom 1px solid #cccccc
+          display flex
+          flex-wrap wrap
+          align-items center
+          .but
+            width 86px
+            height 34px
+            line-height 34px
+            background #dcdcdc
+            margin-left 9px
+            color #000
+            font-size 16px
+          .but:hover
+            background #b41610
+            color #fff
 </style>

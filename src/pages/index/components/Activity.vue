@@ -18,7 +18,7 @@
           <img src="@/assets/images/index/fangzi.jpg" alt="" srcset="">
         </div>
       </div>
-      
+
       <div class="list news">
         <div class="left">
           <p class="title">新闻资讯</p>
