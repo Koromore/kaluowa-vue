@@ -15,7 +15,7 @@
           </router-link>
         </div>
         <div class="content_title">
-          <p>公司简介</p>
+          <h1>公司简介</h1>
           <p>发布时间： 2014-8-6 浏览： 74 次</p>
         </div>
         <div class="img_box">
@@ -75,12 +75,12 @@ export default {
           color #6c6969
           margin-left 16px
       .content
-        max-width 1000px
+        width 100%
         background #fff url(../../../assets/images/about/cp_bj.jpg) 0 0 repeat-x
         border 1px solid #dbd8da
         padding-bottom 50px
         .button
-          margin 0 auto
+          margin 0 auto 32px
           max-width 960px
           height 66px
           border-bottom 1px solid #cccccc
@@ -98,4 +98,27 @@ export default {
           .but:hover
             background #b41610
             color #fff
+        .content_title
+          width 960px
+          margin 0 auto 32px
+          border-bottom 1px dashed #dcdcdc
+          h1
+            font-size 18px
+            margin-bottom 18px
+          p
+            color #6a6969
+            text-align center
+            line-height 35px
+        .img_box
+          img
+            width 960px
+        .content_text
+          width 960px
+          padding-top 28px
+          margin 0 auto
+          p
+            text-align left
+            font-size 12px
+            line-height 24px
+            font-weight bold
 </style>

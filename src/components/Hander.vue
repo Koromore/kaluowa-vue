@@ -74,8 +74,8 @@ export default {
         {
           id: '003',
           navName: '新闻资讯',
-          route: '/',
-          activ: 'index3'
+          route: '/news',
+          activ: 'news'
         },
         {
           id: '004',
