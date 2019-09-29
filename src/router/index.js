@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Index from '@/pages/index/Index'
 import Brand from '@/pages/brand/Brand'
 import News from '@/pages/news/News'
+import Product from '@/pages/product/Product'
+import Service from '@/pages/service/Service'
 
 Vue.use(Router)
 
@@ -22,6 +24,16 @@ export default new Router({
       path: '/news',
       name: 'News',
       component: News
+    },
+    {
+      path: '/product',
+      name: 'Product',
+      component: Product
+    },
+    {
+      path: '/service',
+      name: 'Service',
+      component: Service
     }
   ]
 })

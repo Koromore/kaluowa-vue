@@ -88,9 +88,9 @@ export default {
           flex-wrap wrap
           align-items center
           .but
-            width 86px
             height 34px
             line-height 34px
+            padding 0 13px
             background #dcdcdc
             margin-left 9px
             color #000

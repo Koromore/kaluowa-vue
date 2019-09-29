@@ -1,9 +1,9 @@
 <template>
   <div id="hander">
     <div id="top">
-      <img src="../assets/images/header/logo.jpg" alt="" srcset="">
+      <img src="@/assets/images/header/logo.jpg" alt="" srcset="">
       <div class="right">
-        <img src="../assets/images/header/biaoyu.jpg" alt="" srcset="">
+        <img src="@/assets/images/header/biaoyu.jpg" alt="" srcset="">
         <router-link
           v-for="item of topList"
           :key="item.id"
@@ -80,14 +80,14 @@ export default {
         {
           id: '004',
           navName: '产品中心',
-          route: '/',
-          activ: 'index4'
+          route: '/product',
+          activ: 'product'
         },
         {
           id: '005',
           navName: '客户服务',
-          route: '/',
-          activ: 'index5'
+          route: '/service',
+          activ: 'service'
         },
         {
           id: '006',
