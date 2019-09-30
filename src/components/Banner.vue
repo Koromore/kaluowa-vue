@@ -14,42 +14,16 @@
 <script>
 export default {
   name: 'Banner',
-  // props: {
-  //   list: Array
-  // },
+  props: {
+    bannerImg: Array
+  },
   data () {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
         autoplay: 3000,
         loop: true
-      },
-      bannerImg: [
-        {
-          id: '001',
-          imgUrl: require('@/assets/images/banner/banner1.jpg')
-        },
-        {
-          id: '002',
-          imgUrl: require('@/assets/images/banner/banner2.jpg')
-        },
-        {
-          id: '003',
-          imgUrl: require('@/assets/images/banner/banner3.jpg')
-        },
-        {
-          id: '004',
-          imgUrl: require('@/assets/images/banner/banner4.jpg')
-        },
-        {
-          id: '005',
-          imgUrl: require('@/assets/images/banner/banner5.jpg')
-        },
-        {
-          id: '006',
-          imgUrl: require('@/assets/images/banner/banner6.jpg')
-        }
-      ]
+      }
     }
   },
   computed: {

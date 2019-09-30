@@ -1,0 +1,132 @@
+{
+  "ret": true,
+  "data": {
+    "bannerImg": [
+      {
+        "id": "001",
+        "imgUrl": "static/img/banner/banner1.jpg"
+      },
+      {
+        "id": "002",
+        "imgUrl": "static/img/banner/banner2.jpg"
+      },
+      {
+        "id": "003",
+        "imgUrl": "static/img/banner/banner3.jpg"
+      },
+      {
+        "id": "004",
+        "imgUrl": "static/img/banner/banner4.jpg"
+      },
+      {
+        "id": "005",
+        "imgUrl": "static/img/banner/banner5.jpg"
+      },
+      {
+        "id": "006",
+        "imgUrl": "static/img/banner/banner6.jpg"
+      }
+    ],
+    "topList": [
+      {
+        "id": "001",
+        "topName": "首页",
+        "className": "header-route header-route1",
+        "route": "/"
+      },
+      {
+        "id": "002",
+        "topName": "加盟",
+        "className": "header-route header-route2",
+        "route": "/"
+      },
+      {
+        "id": "003",
+        "topName": "联系",
+        "className": "header-route header-route3",
+        "route": "/"
+      }
+    ],
+    "navList": [
+      {
+        "id": "001",
+        "navName": "网站首页",
+        "route": "/",
+        "activ": "index"
+      },
+      {
+        "id": "002",
+        "navName": "卡诺瓦品牌",
+        "route": "/brand",
+        "activ": "brand"
+      },
+      {
+        "id": "003",
+        "navName": "新闻资讯",
+        "route": "/news",
+        "activ": "news"
+      },
+      {
+        "id": "004",
+        "navName": "产品中心",
+        "route": "/product",
+        "activ": "product"
+      },
+      {
+        "id": "005",
+        "navName": "客户服务",
+        "route": "/service",
+        "activ": "service"
+      },
+      {
+        "id": "006",
+        "navName": "在线留言",
+        "route": "/leaveword",
+        "activ": "leaveword"
+      },
+      {
+        "id": "007",
+        "navName": "联系我们",
+        "route": "/contact",
+        "activ": "contact"
+      }
+    ],
+    "footerNav": [
+      {
+        "id": "001",
+        "navName": "网站首页",
+        "route": "/"
+      },
+      {
+        "id": "002",
+        "navName": "卡诺瓦品牌",
+        "route": "/brand"
+      },
+      {
+        "id": "003",
+        "navName": "新闻资讯",
+        "route": "/news"
+      },
+      {
+        "id": "004",
+        "navName": "产品中心",
+        "route": "/product"
+      },
+      {
+        "id": "005",
+        "navName": "客户服务",
+        "route": "/service"
+      },
+      {
+        "id": "006",
+        "navName": "在线留言",
+        "route": "/leaveword"
+      },
+      {
+        "id": "007",
+        "navName": "联系我们",
+        "route": "/contact"
+      }
+    ]
+  }
+}

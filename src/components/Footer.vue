@@ -1,26 +1,12 @@
 <template>
   <div id="footer">
     <div class="footer_l1">
-      <router-link to='/city' class="list">
-        网站首页
-      </router-link>|
-      <router-link to='/city' class="list">
-        欧卡罗品牌
-      </router-link>|
-      <router-link to='/city' class="list">
-        新闻资讯
-      </router-link>|
-      <router-link to='/city' class="list">
-        产品中心
-      </router-link>|
-      <router-link to='/city' class="list">
-        客户服务
-      </router-link>|
-      <router-link to='/city' class="list">
-        在线留言
-      </router-link>|
-      <router-link to='/city' class="list">
-        在线客服
+      <router-link
+        v-for="item of footerNav"
+        :key="item.id"
+        :to="item.route"
+        class="list">
+        {{item.navName}}
       </router-link>
     </div>
     <div class="footer_l2">
@@ -34,7 +20,13 @@
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  props: {
+    footerNav: Array
+  },
+  data () {
+    return {}
+  }
 }
 </script>
 

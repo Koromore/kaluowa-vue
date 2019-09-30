@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastClick from 'fastclick'
+import axios from 'axios'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import scroll from 'vue-seamless-scroll'
 import './assets/styles/reset.css'
@@ -14,6 +15,7 @@ Vue.use(VueAwesomeSwiper)
 Vue.use(scroll)
 Vue.config.productionTip = false
 fastClick.attach(document.body)
+Vue.prototype.$ajax = axios
 
 /* eslint-disable no-new */
 new Vue({

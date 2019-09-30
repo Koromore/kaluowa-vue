@@ -34,75 +34,12 @@
 export default {
   name: 'Hander',
   props: {
-    activate: String
+    activate: String,
+    topList: Array,
+    navList: Array
   },
   data () {
-    return {
-      topList: [
-        {
-          id: '001',
-          topName: '首页',
-          className: 'header-route header-route1',
-          route: '/'
-        },
-        {
-          id: '002',
-          topName: '加盟',
-          className: 'header-route header-route2',
-          route: '/'
-        },
-        {
-          id: '003',
-          topName: '联系',
-          className: 'header-route header-route3',
-          route: '/'
-        }
-      ],
-      navList: [
-        {
-          id: '001',
-          navName: '网站首页',
-          route: '/',
-          activ: 'index'
-        },
-        {
-          id: '002',
-          navName: '卡诺瓦品牌',
-          route: '/brand',
-          activ: 'brand'
-        },
-        {
-          id: '003',
-          navName: '新闻资讯',
-          route: '/news',
-          activ: 'news'
-        },
-        {
-          id: '004',
-          navName: '产品中心',
-          route: '/product',
-          activ: 'product'
-        },
-        {
-          id: '005',
-          navName: '客户服务',
-          route: '/service',
-          activ: 'service'
-        },
-        {
-          id: '006',
-          navName: '在线留言',
-          route: '/leaveword',
-          activ: 'leaveword'
-        },
-        {
-          id: '007',
-          navName: '联系我们',
-          route: '/contact',
-          activ: 'contact'
-        }
-      ]
-    }
+    return {}
   },
   methods: {}
 }

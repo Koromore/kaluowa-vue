@@ -1,9 +1,13 @@
 <template>
   <div id="leaveword">
-    <contact-header :activate='activate'></contact-header>
-    <contact-banner></contact-banner>
+    <contact-header
+      :activate='activate'
+      :topList='topList'
+      :navList='navList'>
+    </contact-header>
+    <contact-banner :bannerImg='bannerImg'></contact-banner>
     <contact-information></contact-information>
-    <contact-footer></contact-footer>
+    <contact-footer :footerNav='footerNav'></contact-footer>
   </div>
 </template>
 
@@ -24,31 +28,39 @@ export default {
   },
   data () {
     return {
-      cities: {},
-      hotCities: [],
-      letter: '',
+      topList: [],
+      navList: [],
+      bannerImg: [],
+      footerNav: [],
       activate: 'contact'
     }
   },
+  // 方法
   methods: {
-    // getCityInfo () {
-    //   axios.get('/api/city.json')
-    //     .then(this.handleGetCityInfoSucc)
-    // },
-    // handleGetCityInfoSucc (res) {
-    //   res = res.data
-    //   if (res.ret && res.data) {
-    //     const data = res.data
-    //     this.cities = data.cities
-    //     this.hotCities = data.hotCities
-    //   }
-    // },
+    // 请求公用组件内容
+    getPublicInfo () {
+      this.$ajax.get('/static/mock/public.json')
+        .then(this.getPublicInfoSucc)
+    },
+    getPublicInfoSucc (res) {
+      // console.log(res)
+      res = res.data
+      if (res.ret && res.data) {
+        const data = res.data
+        this.topList = data.topList
+        this.navList = data.navList
+        this.bannerImg = data.bannerImg
+        this.footerNav = data.footerNav
+      }
+    }
+    // ,
     // handleLeterChange (letter) {
     //   this.letter = letter
     // }
   },
+  // 生命周期函数
   mounted () {
-    // this.getCityInfo()
+    this.getPublicInfo()
   }
 }
 </script>
