@@ -5,6 +5,8 @@ import Brand from '@/pages/brand/Brand'
 import News from '@/pages/news/News'
 import Product from '@/pages/product/Product'
 import Service from '@/pages/service/Service'
+import Leaveword from '@/pages/leaveword/Leaveword'
+import Contact from '@/pages/contact/Contact'
 
 Vue.use(Router)
 
@@ -34,6 +36,16 @@ export default new Router({
       path: '/service',
       name: 'Service',
       component: Service
+    },
+    {
+      path: '/leaveword',
+      name: 'Leaveword',
+      component: Leaveword
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
     }
   ]
 })

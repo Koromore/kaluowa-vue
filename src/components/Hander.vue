@@ -92,14 +92,14 @@ export default {
         {
           id: '006',
           navName: '在线留言',
-          route: '/',
-          activ: 'index6'
+          route: '/leaveword',
+          activ: 'leaveword'
         },
         {
           id: '007',
           navName: '联系我们',
-          route: '/',
-          activ: 'index7'
+          route: '/contact',
+          activ: 'contact'
         }
       ]
     }
