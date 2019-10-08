@@ -10,12 +10,17 @@ import scroll from 'vue-seamless-scroll'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
 import 'swiper/dist/css/swiper.css'
+import $ from 'jquery'
+import 'bootstrap'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/js/bootstrap.min.js'
 
 Vue.use(VueAwesomeSwiper)
 Vue.use(scroll)
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 Vue.prototype.$ajax = axios
+Vue.prototype.$ = $
 
 /* eslint-disable no-new */
 new Vue({

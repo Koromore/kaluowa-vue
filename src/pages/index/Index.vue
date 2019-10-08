@@ -6,6 +6,7 @@
       :navList='navList'
     >
     </index-header>
+    <!-- <index-nav></index-nav> -->
     <index-banner :bannerImg='bannerImg'></index-banner>
     <index-product></index-product>
     <index-activity></index-activity>
@@ -17,6 +18,7 @@
 <script>
 // import axios from 'axios'
 import IndexHeader from '@/components/Hander'
+import IndexNav from '@/components/Bsnav'
 import IndexBanner from '@/components/Banner'
 import IndexProduct from './components/Product'
 import IndexActivity from './components/Activity'
@@ -26,6 +28,7 @@ import IndexFooter from '@/components/Footer'
 export default {
   name: 'Index',
   components: {
+    IndexNav,
     IndexHeader,
     IndexBanner,
     IndexProduct,
